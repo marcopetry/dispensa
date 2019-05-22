@@ -1,0 +1,43 @@
+#faixa-home {
+    padding-top: 3.5em;
+}
+
+#principal {
+    margin-top: 2em;
+}
+
+.imagem-home, .texto-home {
+    margin: 2em;
+}
+
+#img-faixa {
+    padding-right: 0em;
+}
+
+#frases-topo {
+    padding: 3em 0 0em 6em;
+}
+
+#frases-topo h1 {
+    font-family: Snell-Roundhand, cursive;
+}
+
+.formulario {
+    padding-top: 8em;
+    padding-left: 5em;
+}
+
+.fundo {
+    background:  url("/static/imagens/fundo-cinza.jpg");
+    height: 1000px;
+}
+
+.lista {
+    padding-top: 10em;
+    padding-left: 0em;
+}
+
+.tabela {
+    padding: 0 3em 0 3em;
+    margin: 0;
+}

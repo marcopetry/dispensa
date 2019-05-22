@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% extends 'cabecalho.html' %}
+{% load crispy_forms_tags %} ## Carregando a biblioteca
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'CSS/estilo.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+{% block content %}
+<div class="container-fluid fundo lista">
+    <div class="row">
+        <div class="col-12 justify-content-around">
+            <ul class="tabela">
+                <h1 class="p-3">Estoque</h1>
+                <table class="table table-dark table-hover text-center">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Categoria</th>
+                            <th>Mínimo desejável</th>
+                            <th>Em estoque</th> <!-- Preciso por a unidade de medida -->
+                            <th>Valor Total</th>
+                            <th>Data última entrada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for estoque in estoque %}
+                            <tr>
+                                <td>{{ estoque.item.nome }}</td>
+                                <td>{{ estoque.item.categoria }}</td>
+                                <td>{{ estoque.item.quantidade_minima_desejada }}</td>
+                                <td>{{ estoque.quantidade }}</td>
+                                <td>{{ estoque.valor_total }}</td>
+                                <td>{{ estoque.data_entrada}}</td>
+                                <td><a href="{% url 'alterar_estoque' estoque.id %}">Editar</a></td>
+                                <td><a href="{% url 'delete_estoque' estoque.id %}">Excluir</a></td>
+                            </tr>
+                       {% endfor %}
+                    </tbody>
+                </table>
+            </ul>
+            <div class="row">
+                <div class="col-12 ml-5">
+                    <a class="" href="{% url 'estoque_form' %}">
+                        <button class="btn btn-dark" type="button">Lançar item</button>
+                    </a>
+
+                    <a class="" href="{% url 'estoque_form' %}">
+                        <button class="btn btn-dark" type="button">Baixar item</button>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

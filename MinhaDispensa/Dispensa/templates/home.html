@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+{% extends 'cabecalho.html' %}
+{% load staticfiles %}
+
+<html lang="pt-br">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/estilo.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+{% block content %}
+
+<div class="container-fluid">
+    <div id="faixa-home" class="row" style="background-image: url({% static 'imagens/fundo-cinza.jpg' %})">
+        <div id="frases-topo" class="col-8">
+            <h1 class="mb-5">Minha Dispensa</h1>
+            <ul>
+                <li><h2>Controle os produtos da sua casa</h2>
+                <li><h2>Receba notificação quando algum produto acabar</h2></li>
+                <li><h2>Gere listas de mercado automaticamente</h2></li>
+                <li><h2>Compartilhe com seus familiares</h2></li>
+                <li><h2>Se organize melhor e ganhe tempo</h2></li>
+            </ul>
+        </div>
+
+        <div class="col-4 d-flex justify-content-end">
+            <img id="img-faixa" src="{% static 'imagens/faixa_home.png' %}">
+        </div>
+    </div>
+    <div class="row">
+        <div id="principal" class="col-12 d-flex justify-content-around">
+            <div>
+                <a href="">
+                    <img src="{% static 'imagens/casa.jpg' %}" class="rounded-circle" alt="Cinque Terre" width="500" height="388">
+                    <h3 class="text-center m-4">Casa e Moradores</h3>
+                </a>
+            </div>
+
+            <div>
+                <a href="{% url 'estoque' %}">
+                    <img src="{% static 'imagens/estoque.jpg' %}" class="rounded-circle" alt="Cinque Terre" width="500" height="388">
+                    <h3 class="text-center m-4">Estoque</h3>
+                </a>
+             </div>
+
+            <div>
+                <a href="{% url 'itens' %}">
+                    <img src="{% static 'imagens/mercado.jpg' %}" class="rounded-circle" alt="Cinque Terre" width="500" height="388">
+                    <h3 class="text-center m-4">Mercado e Produtos</h3>
+                </a>
+             </div>
+	    </div>
+    </div>
+
+    <hr class="mb-0 mt-5">
+
+    <div class="row">
+        <div class="col-6 bg-dark text-white d-flex justify-content-center">
+            <img class="imagem-home" src="{% static 'imagens/icone_casa.png' %}">
+        </div>
+        <div class="col-6 m-auto d-flex justify-content-center">
+            <div class="text-center">
+                <h1>Sua casa sob controle</h1>
+                <p>
+                    Tenha um maior controle sobre sua casa e se organize melhor.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-6 m-auto d-flex justify-content-center">
+            <div class="text-center">
+                <h1>Estoque da sua casa</h1>
+                <p>
+                    Saiba tudo que tem em casa e não fique com dúvidas na hora de comprar.
+                </p>
+            </div>
+        </div>
+        <div class="col-6 bg-dark text-white d-flex justify-content-center">
+            <img class="imagem-home" src="{% static 'imagens/open-box.png' %}">
+        </div>
+
+        <div class="col-6 bg-dark text-white d-flex justify-content-center">
+            <img class="imagem-home" src="{% static 'imagens/escrita.png' %}">
+        </div>
+        <div class="col-6 m-auto d-flex justify-content-center">
+            <div class="text-center">
+                <h1>Gere listas de compras</h1>
+                <p>
+                    Gere listas de compras e não corra o risco de esquecer de nada.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>
+
+
+
+
+<!--
+	{% load staticfiles %}
+	{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+para “linkar” o arquivo .css ao .html
+
+-->
+
+
