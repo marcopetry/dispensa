@@ -1,5 +1,5 @@
 from django import forms
-from .models import Item, Estoque
+from .models import Item, Estoque, Morador
 
 class ItemForm(forms.ModelForm):
     class Meta:
@@ -10,3 +10,8 @@ class EstoqueForm(forms.ModelForm):
     class Meta:
         model = Estoque
         fields = {'data_entrada', 'ultima_data_saida', 'quantidade', 'item', 'valor_total'}
+
+class MoradorForm(forms.ModelForm):
+    class Meta:
+        model = Morador
+        fields = {'nome', 'sobrenome', 'senha'}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends 'cabecalho.html' %}
+{% load staticfiles %}
+<html lang="pt-br">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'CSS/estilo.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+{% block content %}
+<div class="container-fluid fundo lista">
+
+
+    <div class="row">
+        <div class="col-12 justify-content-around">
+            <ul class="tabela">
+                <h1 class="p-3">Moradores</h1>
+                <table class="table table-dark table-hover text-center">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for morador in morador %}
+                            <tr>
+                                <td>{{ morador.nome }} {{  morador.sobrenome }}</td>
+                                <td><a href="{% url 'alterar_dados' morador.id %}">Editar</a></td>
+                                <td><a href="{% url 'delete_morador' morador.id %}">Excluir</a></td>
+                            </tr>
+                       {% endfor %}
+                    </tbody>
+                </table>
+            </ul>
+            <a class="m-5" href="{% url 'morador_form' %}">
+                <button class="btn btn-dark" type="button">Novo Morador</button>
+            </a>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+</body>
+</html>

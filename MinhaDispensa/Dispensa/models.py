@@ -21,19 +21,22 @@ class Item(models.Model):
     unidade_medida = models.CharField(max_length=10, choices=medidas)
     valor_unitario = models.DecimalField(max_digits=10, decimal_places=2)
     quantidade_minima_desejada = models.DecimalField(max_digits=10, decimal_places=2)
-
     def __str__(self):
         return self.nome
 
 class Estoque(models.Model):
+    """
+    morador = models.ForeignKey( #isso que eu inclui
+        'Morador',
+        on_delete=models.CASCADE,
+    )
+    """
+
     data_entrada = models.DateField()
     ultima_data_saida = models.DateField(null=True, blank=True)
     quantidade = models.DecimalField(max_digits=10, decimal_places=3)
     item = models.ManyToManyField("Item")
     valor_total = models.DecimalField(max_digits=10, decimal_places=2)
-
-    def __str__(self):
-        return self
 
 class Morador(models.Model):
     nome = models.CharField(max_length=100)
@@ -44,3 +47,7 @@ class Morador(models.Model):
         return self.nome
 
 #Item, Morador, Estoque
+"""
+def _str_(self):
+        return str(self.data) + " - " + str(self.vendedor)
+"""

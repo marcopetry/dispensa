@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import Item, Estoque
-from .forms import ItemForm, EstoqueForm
+from .models import Item, Estoque, Morador
+from .forms import ItemForm, EstoqueForm, MoradorForm
 
 # Create your views here.
 def home(request):
@@ -69,3 +69,32 @@ def delete_estoque(request, id):
 
     return render(request, 'delete_estoque.html', {'estoque': estoque})
 
+def morador_form(request):
+    form = MoradorForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return redirect('estoque')
+
+    return render(request, 'morador_form.html', {'form': form})
+
+def moradores(request):
+    morador = Morador.objects.all()
+    return render(request, 'moradores.html', {'morador': morador})
+
+def alterar_dados(request, id):
+    morador = Morador.objects.get(id=id)
+    form = MoradorForm(request.POST or None, instance=morador)
+    if form.is_valid():
+        form.save()
+        return redirect('moradores')
+
+    return render(request, 'morador_form.html', {'form': form, 'morador': morador})
+
+def delete_morador(request, id):
+    morador = Morador.objects.get(id=id)
+
+    if request.method == 'POST':
+        morador.delete()
+        return redirect('moradores')
+
+    return render(request, 'delete_morador.html', {'morador': morador})

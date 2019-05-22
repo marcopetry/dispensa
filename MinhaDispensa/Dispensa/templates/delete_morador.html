@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+{% extends 'cabecalho.html' %}
 {% load staticfiles %}
+
 <html lang="pt-br">
 <head>
   <title>Home</title>
@@ -14,35 +16,22 @@
 </head>
 
 <body>
+{% block content %}
+    <div class="fundo formulario">
+        <h1>Excluir produto {{item.nome}}</h1>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-  <a class="navbar-brand" href="{% url 'home' %}">MinhaDispensa.com</a>
-  <ul class="navbar-nav ml-auto">
-	<li class="nav-item">
-	  <a class="nav-link" href="#">Link</a>
-	</li>
-	<li class="nav-item">
-	  <a class="nav-link" href="#">Link</a>
-	</li>
-  </ul>
-</nav>
+        <form method="POST">
+            {% csrf_token %}
+            <h2>Você tem certeza que deseja excluir esse morador? </h2>
+            <h3 class="m-3">Morador: {{morador.nome}} {{ morador.sobrenome }}</h3>
 
-    {% block content %}
-    {% endblock %}
+            <button class="btn btn-dark m-3" type="submit">Confirmar</button>
+            <a href="{% url 'estoque' %}"><button class="btn btn-dark m-3" type="button">Cancelar</button> </a>
+        </form>
 
-</div>
+    </div>
+
+{% endblock %}
+
 </body>
 </html>
-
-
-
-
-<!--
-	{% load staticfiles %}
-	{% load static %}
-<link rel="stylesheet" href="{% static 'CSS/style.css' %}">
-para “linkar” o arquivo .css ao .html
-
--->
-
-
