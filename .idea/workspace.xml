@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fdbc1c2-9255-465c-b43f-6ea62e5b1016" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_morador.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/morador_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/moradores.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaDispensa/Dispensa/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaDispensa/Dispensa/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MinhaDispensa/Dispensa/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/cabecalho.html" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/cabecalho.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_estoque.html" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_estoque.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/estoque.html" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/estoque.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaDispensa/Dispensa/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MinhaDispensa/Dispensa/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaDispensa/Dispensa/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MinhaDispensa/MinhaDispensa.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaDispensa/MinhaDispensa.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaDispensa/MinhaDispensa/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaDispensa/MinhaDispensa/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,39 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="425">
               <caret line="40" column="42" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/cabecalho.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/moradores.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/itens.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -64,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="527">
+              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-end-line="32" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -74,9 +39,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/static/CSS/estilo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="34" selection-start-line="30" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="306">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -88,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="71" column="16" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="16" />
+            <state relative-caret-position="187">
+              <caret line="45" selection-start-line="45" selection-end-line="51" selection-end-column="63" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -98,9 +72,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/estoque.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-272">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_estoque.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_morador.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
+            <state relative-caret-position="408">
               <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
             </state>
           </provider>
@@ -109,17 +101,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_item.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="31" column="10" lean-forward="true" selection-end-line="36" selection-end-column="7" />
+            <state relative-caret-position="527">
+              <caret line="31" column="10" selection-end-line="36" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/morador_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="391">
+              <caret line="23" column="24" selection-start-line="23" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -143,20 +135,20 @@
         <option value="$PROJECT_DIR$/MinhaDispensa/MinhaDispensa/urls.py" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/admin.py" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_item.html" />
-        <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_estoque.html" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/estoque_form.html" />
         <option value="$PROJECT_DIR$/MinhaDispensa/MinhaDispensa/settings.py" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/item_form.html" />
-        <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/estoque.html" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/forms.py" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/casa.html" />
-        <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/models.py" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/cabecalho.html" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/home.html" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_morador.html" />
-        <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/views.py" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/urls.py" />
         <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/moradores.html" />
+        <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/views.py" />
+        <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/estoque.html" />
+        <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_estoque.html" />
+        <option value="$PROJECT_DIR$/MinhaDispensa/Dispensa/models.py" />
       </list>
     </option>
   </component>
@@ -195,6 +187,29 @@
               <item name="MinhaDispensa" type="462c0819:PsiDirectoryNode" />
               <item name="Dispensa" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dispensa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dispensa" type="462c0819:PsiDirectoryNode" />
+              <item name="MinhaDispensa" type="462c0819:PsiDirectoryNode" />
+              <item name="Dispensa" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dispensa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dispensa" type="462c0819:PsiDirectoryNode" />
+              <item name="MinhaDispensa" type="462c0819:PsiDirectoryNode" />
+              <item name="Dispensa" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="CSS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dispensa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dispensa" type="462c0819:PsiDirectoryNode" />
+              <item name="MinhaDispensa" type="462c0819:PsiDirectoryNode" />
+              <item name="Dispensa" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="imagens" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Dispensa" type="b2602c69:ProjectViewProjectNode" />
@@ -240,26 +255,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558534752144</updated>
-      <workItem from="1558534753334" duration="18146000" />
+      <workItem from="1558534753334" duration="18490000" />
+      <workItem from="1558562780747" duration="2941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18146000" />
+    <option name="totallyTimeSpent" value="21431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32936078" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -267,11 +277,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,13 +334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_estoque.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MinhaDispensa/MinhaDispensa/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -336,13 +345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="87" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/estoque.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -368,16 +370,6 @@
         <state relative-caret-position="-68" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/cabecalho.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -385,44 +377,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/moradores.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="40" column="42" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="42" />
+        <state relative-caret-position="697">
+          <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/itens.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/morador_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="31" column="10" lean-forward="true" selection-end-line="36" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_morador.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        <state relative-caret-position="357">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="306">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -430,20 +401,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_morador.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="10" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/delete_estoque.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="71" column="16" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="16" />
+        <state relative-caret-position="187">
+          <caret line="45" selection-start-line="45" selection-end-line="51" selection-end-column="63" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/moradores.html">
+    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+        <state relative-caret-position="527">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/static/CSS/estilo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="34" selection-start-line="30" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/estoque.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinhaDispensa/Dispensa/templates/morador_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="24" selection-start-line="23" selection-end-line="24" />
         </state>
       </provider>
     </entry>

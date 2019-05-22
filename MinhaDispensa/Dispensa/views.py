@@ -73,7 +73,7 @@ def morador_form(request):
     form = MoradorForm(request.POST or None)
     if form.is_valid():
         form.save()
-        return redirect('estoque')
+        return redirect('moradores')
 
     return render(request, 'morador_form.html', {'form': form})
 

@@ -24,12 +24,13 @@
         <form method="POST">
             {% csrf_token %}
             <h2>Você tem certeza que deseja excluir o produto do estoque? </h2>
-            <h3 class="m-3">Item: {{estoque.nome}}</h3>
-            <h4 class="m-3">Categoria: {{estoque.categoria}}</h4>
+            {% for item in estoque.item.all %}
+            <h3 class="m-3">Item: {{ item.nome }}</h3>
+            <h4 class="m-3">Categoria: {{ item.categoria }}</h4>
+            {% endfor %}}
             <button class="btn btn-dark m-3" type="submit">Confirmar</button>
             <a href="{% url 'estoque' %}"><button class="btn btn-dark m-3" type="button">Cancelar</button> </a>
         </form>
 
     </div>
-
 {% endblock %}

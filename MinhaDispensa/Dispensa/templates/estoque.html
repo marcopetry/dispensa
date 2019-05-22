@@ -35,14 +35,16 @@
                     <tbody>
                         {% for estoque in estoque %}
                             <tr>
-                                <td>{{ estoque.item }}</td>
-                                <td>{{ estoque.item.categoria }}</td>
-                                <td>{{ estoque.item.quantidade_minima_desejada }}</td>
-                                <td>{{ estoque.quantidade }}</td>
-                                <td>{{ estoque.valor_total }}</td>
-                                <td>{{ estoque.data_entrada}}</td>
-                                <td><a href="{% url 'alterar_estoque' estoque.id %}">Editar</a></td>
-                                <td><a href="{% url 'delete_estoque' estoque.id %}">Excluir</a></td>
+                                {% for item in estoque.item.all %}
+                                    <td>{{ item.nome }}</td>
+                                    <td>{{ item.categoria }}</td>
+                                    <td>{{ item.quantidade_minima_desejada }}</td>
+                                    <td>{{ estoque.quantidade }}</td>
+                                    <td>{{ estoque.valor_total }}</td>
+                                    <td>{{ estoque.data_entrada}}</td>
+                                    <td><a href="{% url 'alterar_estoque' estoque.id %}">Editar</a></td>
+                                    <td><a href="{% url 'delete_estoque' estoque.id %}">Excluir</a></td>
+                                {% endfor %}
                             </tr>
                        {% endfor %}
                     </tbody>

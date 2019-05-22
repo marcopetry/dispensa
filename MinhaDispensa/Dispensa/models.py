@@ -25,12 +25,6 @@ class Item(models.Model):
         return self.nome
 
 class Estoque(models.Model):
-    """
-    morador = models.ForeignKey( #isso que eu inclui
-        'Morador',
-        on_delete=models.CASCADE,
-    )
-    """
 
     data_entrada = models.DateField()
     ultima_data_saida = models.DateField(null=True, blank=True)
